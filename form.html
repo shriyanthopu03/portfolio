@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="formstyle.css">
 </head>
 <body>
-    <form >
-        <label for="name"> Name: </label>
-        <input type="text" id="name" name="name">
+    <div class="container">
+        <div class="box1">
+            <h1> Query Form</h1>  
+          <form >
+        <div class="textbox">
+            <label for="name"> Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter name">
+        </div>
 <br>
 <br>
-        <label for="email"> Email ID: </label>
-        <input type="email" id="email" name="email">
+        <div class="textbox">    
+          <label for="email"> Email ID: </label>
+          <input type="email" id="email" name="email" placeholder="Enter email">
+        </div>
     <br>
     <br>
+
     <label for="gender">Gender</label>
     <input type="radio" id="Male" name="gender" value="male"> 
     <label for="male"> Male </label>
@@ -33,12 +41,16 @@
 </select>
 <br>
 <br>
+<div class="textbox">
 <label for="msg">Message</label>
-<textarea id="message" name="message" rows="4" cols="50"> </textarea>   
+<textarea id="message" name="message" rows="4" cols="50" placeholder="text here"> </textarea>   
+</div>
 <br>
 <br>
-<input type="submit" value="Submit">
+<input  type="submit" value="Submit" class="submit">
 
-</form>
+          </form>
+        </div>
+</div>
 </body>
 </html>
