@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Webpage</title>
+    
 </head>
 <body>
     <div class="navbar"> 
@@ -18,18 +16,22 @@
              src="https://res.cloudinary.com/dqvzj2cq1/image/upload/v1718034014/Captre-removebg-preview_k8e7ia.png" 
              alt="logo here">
              </div>
-       <div class="navbar-right">
+             <button class="navbar-toggler" type=" buttontype="button" onclick="togglemenu()">
+                button 
+              </button>
+       <div class="navbar-right" id="inside">
         <a class="a-element" > Home </a>
         <a class="a-element" > About </a>
-        <a class="a-element" href="form.html"> Services</1a>
+        <a class="a-element" href="form.html"> Services</a>
         <a class="a-element" href="#contact"> Contact </a>
+        
 
        </div>   
     </div>
     <div class="home" id="home">
         <div class="home-left">
         <h1 class="heading1"> SHRIYAN THOPU </h1>
-        <p class="infom" id="about"> Hello, I'm Shriyan, a passionate Bachelor's degree candidate in Artificial Intelligence at so and so clg in hyd. With a strong background in web development and a robust portfolio of over 50 websites, I have honed my skills in creating dynamic and visually appealing online experiences. Proficient in Python, I am adept at leveraging its power for efficient and scalable solutions.
+        <p class="infom" id="about"> Hello, I'm Shriyan, a passionate Bachelor's degree candidate in Artificial Intelligence at the University of so and so  in Bengaluru. With a strong background in web development and a robust portfolio of over 50 websites, I have honed my skills in creating dynamic and visually appealing online experiences. Proficient in Python, I am adept at leveraging its power for efficient and scalable solutions.
             Alongside my technical expertise, l possess excellent leadership and teamwork skills.  </p>
         </div>
         <div class="home-right">
@@ -97,5 +99,20 @@
      <div>
 
      </div>
+     <script>
+        var inside = document.getElementById("inside");
+        inside.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if(inside.style.maxHeight == "0px")
+            {
+                inside.style.maxHeight = "250px";
+            }
+            else{
+                inside.style.maxHeight = "0px";
+            }
+        }
+
+     </script>
 </body>
 </html>
