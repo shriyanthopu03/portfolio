@@ -1,8 +1,55 @@
-form {
-    background-color: burlywood;
-    color: crimson;
-}
 body {
-    background-color: burlywood;
+    background-color: rgba(3, 0, 0, 0.486);
+    color: aliceblue;
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    
+    
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+.box1{
+    width: 500px;
+    
+    background: rgba(3, 0, 0, 0.486);
+    border: 2px solid red;
+    text-align: center;
+    padding-top: 30x;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.box1 h1 {
+    text-transform: uppercase;
+
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid white;
+    font-size: 15px;
+    color: white; 
+}
+.submit{
+    letter-spacing: 1px ;
+    width: 100%;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    letter-spacing: 1px ;
+}
+.submit:hover {
+    background: #fff;
     color: black;
 }
