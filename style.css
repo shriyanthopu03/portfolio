@@ -11,6 +11,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
 background-color: black;
+align-items: center;
 
 }
 .navbar-left {
@@ -18,6 +19,7 @@ background-color: black;
 }
 .navbar-right {
     padding-right: 22px;
+    
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -116,4 +118,63 @@ padding: 10px;
     margin-left: 80px;
     margin-right: 80px;
  margin-top: 20px;
+}
+.navbar-toggler{
+    display: none;
+    
+}
+@media only screen and (max-width:700px) 
+{
+.navbar {
+    display: block;
+    
+}
+.navbar-left{
+    text-align: left;
+}
+.navbar-right{
+    display: flex;
+flex-direction: column;
+align-items: end;
+
+}
+.a-element {
+    margin: 0px;
+}
+.contact-info {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 200;
+    font-style: normal;
+}
+.social-icon-img{
+    height: 20px;
+   
+}
+.navbar-toggler{
+    display: flex;
+    flex-direction: row;
+   text-align: right;
+   align-items: end;
+   justify-content: space-between;
+}
+#inside {
+    overflow: hidden;
+    transition: 0.9s;
+
+}
+.heading1{
+    padding: 2px;
+    margin: 10px ;
+    justify-content: center;
+}
+.home-left {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.home-right {
+text-align: left;
+}
+.home{
+    justify-content: left;
+}
 }
